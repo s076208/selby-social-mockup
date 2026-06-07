@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Facebook Mockup</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <a href="index.html">⬅ Back</a>
+    <h2>Facebook Page Mockup</h2>
+
+    <label class="switch">
+        <input type="checkbox" id="toggleFB" onclick="toggleFacebook()">
+        <span class="slider"></span>
+    </label>
+
+    <span>Improved View</span>
+</div>
+
+<!-- CURRENT VIEW -->
+<div id="fb-current" class="page">
+
+    <div class="cover current-bg">
+        <h1>Selby (Current Page)</h1>
+    </div>
+
+    <div class="content">
+        <h2>About</h2>
+        <p>Basic Facebook page with limited engagement and standard posts.</p>
+
+        <div class="post">Post 1 - Product update</div>
+        <div class="post">Post 2 - Store information</div>
+    </div>
+
+</div>
+
+<!-- IMPROVED VIEW -->
+<div id="fb-improved" class="page hidden">
+
+    <div class="cover improved-bg">
+        <h1>Selby (Improved Page)</h1>
+    </div>
+
+    <div class="content">
+
+        <h2>About (Improved)</h2>
+        <p>Enhanced branding, clearer messaging, and customer-focused content.</p>
+
+        <button class="cta">Shop Now</button>
+        <button class="cta secondary">Contact Us</button>
+
+        <div class="post">📌 Featured Products Carousel</div>
+        <div class="post">⭐ Customer Reviews Section</div>
+        <div class="post">🔥 Weekly Promotions</div>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

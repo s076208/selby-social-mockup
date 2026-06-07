@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Instagram Mockup</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <a href="index.html">⬅ Back</a>
+    <h2>Instagram Profile Mockup</h2>
+
+    <label class="switch">
+        <input type="checkbox" id="toggleIG" onclick="toggleInstagram()">
+        <span class="slider"></span>
+    </label>
+
+    <span>Improved View</span>
+</div>
+
+<!-- CURRENT -->
+<div id="ig-current" class="page">
+
+    <div class="profile">
+        <h1>@selbymv</h1>
+        <p>Hardware store | Maldives</p>
+    </div>
+
+    <div class="grid">
+        <div class="box">Post</div>
+        <div class="box">Post</div>
+        <div class="box">Post</div>
+    </div>
+
+</div>
+
+<!-- IMPROVED -->
+<div id="ig-improved" class="page hidden">
+
+    <div class="profile">
+        <h1>@selbymv</h1>
+        <p>🏗 Hardware | DIY | Construction Solutions</p>
+    </div>
+
+    <button class="cta">Visit Website</button>
+
+    <div class="highlights">
+        <div>Deals</div>
+        <div>Tools</div>
+        <div>DIY</div>
+        <div>Delivery</div>
+    </div>
+
+    <div class="grid">
+        <div class="box improved">Product Showcase</div>
+        <div class="box improved">Tutorial</div>
+        <div class="box improved">Promotion</div>
+        <div class="box improved">Customer Story</div>
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
