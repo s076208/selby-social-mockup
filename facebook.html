@@ -10,7 +10,7 @@
 
 <div class="topbar">
     <a href="index.html">← Back</a>
-    <h2>Selby Social Feed Prototype</h2>
+    <h2>Selby Facebook Prototype</h2>
 
     <label class="toggle">
         <input type="checkbox" onclick="toggleFB()">
@@ -22,62 +22,72 @@
 
 <div class="layout">
 
-    <!-- LEFT SIDEBAR -->
-    <div class="sidebar">
-        <div class="card">
-            <h3>Selby Maldives</h3>
-            <p>Hardware • Tools • Construction</p>
-        </div>
-
-        <div class="nav">
-            <p>Home</p>
-            <p>Products</p>
-            <p>Promotions</p>
-            <p>Contact</p>
-        </div>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="card">
+        <h3>Selby Maldives</h3>
+        <p>Hardware • Tools • Construction</p>
     </div>
+</div>
 
-    <!-- FEED -->
-    <div class="feed">
+<!-- FEED -->
+<div class="feed">
 
-        <div id="fb-before">
+<!-- BEFORE -->
+<div id="fb-before">
 
-            <div class="post">
-                <h4>Selby</h4>
-                <p>New stock arrival update.</p>
-                <div class="postbox">Image Placeholder</div>
-                <div class="actions">Like • Comment • Share</div>
-            </div>
+<div class="post">
+  <div class="post-header">
+    <div class="avatar"></div>
+    <div><b>Selby Maldives</b><br><small>2 hrs ago</small></div>
+  </div>
 
-            <div class="post">
-                <h4>Selby</h4>
-                <p>Store information post.</p>
-                <div class="postbox">Image Placeholder</div>
-                <div class="actions">Like • Comment • Share</div>
-            </div>
+  <p>New stock arrival update.</p>
+  <img src="assets/tools-1.jpg" class="post-img">
 
-        </div>
+  <div class="post-actions">Like • Comment • Share</div>
+</div>
 
-        <div id="fb-after" class="hidden">
+<div class="post">
+  <p>Store information update.</p>
+  <img src="assets/hardware-shelves.jpg" class="post-img">
+</div>
 
-            <div class="post highlight">
-                <h4>🔥 Weekly Deals</h4>
-                <p>Up to 20% off selected hardware tools.</p>
-                <div class="postbox">Promotional Banner</div>
-                <div class="actions strong">Shop Now • WhatsApp • Save Offer</div>
-            </div>
+</div>
 
-            <div class="post highlight">
-                <h4>⭐ Customer Project Feature</h4>
-                <p>Real island construction success story.</p>
-                <div class="postbox">Case Study Image</div>
-                <div class="actions strong">Like • Share • Learn More</div>
-            </div>
+<!-- AFTER -->
+<div id="fb-after" class="hidden">
 
-        </div>
+<div class="post highlight">
+  <div class="badge">🔥 PROMOTION</div>
 
-    </div>
+  <div class="post-header">
+    <div class="avatar"></div>
+    <div><b>Selby Maldives</b><br><small>Sponsored</small></div>
+  </div>
 
+  <p>Up to 20% OFF selected hardware tools this week.</p>
+
+  <img src="assets/promotion-banner.jpg" class="post-img">
+
+  <div class="cta-row">
+    <button>Shop Now</button>
+    <button>WhatsApp</button>
+  </div>
+</div>
+
+<div class="post highlight">
+  <p>Customer project success story from outer islands.</p>
+  <img src="assets/delivery-truck.jpg" class="post-img">
+
+  <div class="cta-row">
+    <button>Learn More</button>
+  </div>
+</div>
+
+</div>
+
+</div>
 </div>
 
 <script src="js/app.js"></script>
