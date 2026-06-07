@@ -1,19 +1,9 @@
-function toggleFacebook() {
-
-let current = document.getElementById("fb-current");
-let improved = document.getElementById("fb-improved");
-
-current.classList.toggle("hidden");
-improved.classList.toggle("hidden");
-
+function toggleFB() {
+document.getElementById("fb-before").classList.toggle("hidden");
+document.getElementById("fb-after").classList.toggle("hidden");
 }
 
-function toggleInstagram() {
-
-let current = document.getElementById("ig-current");
-let improved = document.getElementById("ig-improved");
-
-current.classList.toggle("hidden");
-improved.classList.toggle("hidden");
-
+function toggleIG() {
+document.getElementById("ig-before").classList.toggle("hidden");
+document.getElementById("ig-after").classList.toggle("hidden");
 }
