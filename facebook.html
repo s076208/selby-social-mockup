@@ -2,59 +2,79 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Facebook Mockup</title>
+<title>Facebook Prototype</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <div class="topbar">
-    <a href="index.html">⬅ Back</a>
-    <h2>Facebook Page Mockup</h2>
+    <a href="index.html">← Back</a>
+    <h2>Selby Social Feed Prototype</h2>
 
-    <label class="switch">
-        <input type="checkbox" id="toggleFB" onclick="toggleFacebook()">
-        <span class="slider"></span>
+    <label class="toggle">
+        <input type="checkbox" onclick="toggleFB()">
+        <span></span>
     </label>
 
-    <span>Improved View</span>
+    <span>Improved Mode</span>
 </div>
 
-<!-- CURRENT VIEW -->
-<div id="fb-current" class="page">
+<div class="layout">
 
-    <div class="cover current-bg">
-        <h1>Selby (Current Page)</h1>
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+        <div class="card">
+            <h3>Selby Maldives</h3>
+            <p>Hardware • Tools • Construction</p>
+        </div>
+
+        <div class="nav">
+            <p>Home</p>
+            <p>Products</p>
+            <p>Promotions</p>
+            <p>Contact</p>
+        </div>
     </div>
 
-    <div class="content">
-        <h2>About</h2>
-        <p>Basic Facebook page with limited engagement and standard posts.</p>
+    <!-- FEED -->
+    <div class="feed">
 
-        <div class="post">Post 1 - Product update</div>
-        <div class="post">Post 2 - Store information</div>
-    </div>
+        <div id="fb-before">
 
-</div>
+            <div class="post">
+                <h4>Selby</h4>
+                <p>New stock arrival update.</p>
+                <div class="postbox">Image Placeholder</div>
+                <div class="actions">Like • Comment • Share</div>
+            </div>
 
-<!-- IMPROVED VIEW -->
-<div id="fb-improved" class="page hidden">
+            <div class="post">
+                <h4>Selby</h4>
+                <p>Store information post.</p>
+                <div class="postbox">Image Placeholder</div>
+                <div class="actions">Like • Comment • Share</div>
+            </div>
 
-    <div class="cover improved-bg">
-        <h1>Selby (Improved Page)</h1>
-    </div>
+        </div>
 
-    <div class="content">
+        <div id="fb-after" class="hidden">
 
-        <h2>About (Improved)</h2>
-        <p>Enhanced branding, clearer messaging, and customer-focused content.</p>
+            <div class="post highlight">
+                <h4>🔥 Weekly Deals</h4>
+                <p>Up to 20% off selected hardware tools.</p>
+                <div class="postbox">Promotional Banner</div>
+                <div class="actions strong">Shop Now • WhatsApp • Save Offer</div>
+            </div>
 
-        <button class="cta">Shop Now</button>
-        <button class="cta secondary">Contact Us</button>
+            <div class="post highlight">
+                <h4>⭐ Customer Project Feature</h4>
+                <p>Real island construction success story.</p>
+                <div class="postbox">Case Study Image</div>
+                <div class="actions strong">Like • Share • Learn More</div>
+            </div>
 
-        <div class="post">📌 Featured Products Carousel</div>
-        <div class="post">⭐ Customer Reviews Section</div>
-        <div class="post">🔥 Weekly Promotions</div>
+        </div>
 
     </div>
 
