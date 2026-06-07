@@ -2,62 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Instagram Mockup</title>
+<title>Instagram Prototype</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <div class="topbar">
-    <a href="index.html">⬅ Back</a>
-    <h2>Instagram Profile Mockup</h2>
+    <a href="index.html">← Back</a>
+    <h2>Selby Instagram Prototype</h2>
 
-    <label class="switch">
-        <input type="checkbox" id="toggleIG" onclick="toggleInstagram()">
-        <span class="slider"></span>
+    <label class="toggle">
+        <input type="checkbox" onclick="toggleIG()">
+        <span></span>
     </label>
 
-    <span>Improved View</span>
+    <span>Improved Mode</span>
 </div>
 
-<!-- CURRENT -->
-<div id="ig-current" class="page">
+<div class="profile">
 
-    <div class="profile">
-        <h1>@selbymv</h1>
-        <p>Hardware store | Maldives</p>
+    <div class="header">
+        <div class="avatar"></div>
+        <div>
+            <h2>@selbymv</h2>
+            <p>Hardware • DIY • Construction Solutions</p>
+        </div>
     </div>
 
-    <div class="grid">
-        <div class="box">Post</div>
-        <div class="box">Post</div>
-        <div class="box">Post</div>
-    </div>
-
-</div>
-
-<!-- IMPROVED -->
-<div id="ig-improved" class="page hidden">
-
-    <div class="profile">
-        <h1>@selbymv</h1>
-        <p>🏗 Hardware | DIY | Construction Solutions</p>
+    <div class="stats">
+        <div><b>120</b><p>Posts</p></div>
+        <div><b>8.5K</b><p>Followers</p></div>
+        <div><b>450</b><p>Following</p></div>
     </div>
 
     <button class="cta">Visit Website</button>
 
-    <div class="highlights">
+    <div class="stories">
         <div>Deals</div>
         <div>Tools</div>
-        <div>DIY</div>
+        <div>Projects</div>
         <div>Delivery</div>
     </div>
 
-    <div class="grid">
-        <div class="box improved">Product Showcase</div>
-        <div class="box improved">Tutorial</div>
-        <div class="box improved">Promotion</div>
-        <div class="box improved">Customer Story</div>
+    <div id="ig-before" class="grid">
+
+        <div class="box">Post</div>
+        <div class="box">Post</div>
+        <div class="box">Post</div>
+        <div class="box">Post</div>
+
+    </div>
+
+    <div id="ig-after" class="grid hidden">
+
+        <div class="box strong">Product Showcase</div>
+        <div class="box strong">DIY Tutorial</div>
+        <div class="box strong">Promotion</div>
+        <div class="box strong">Customer Story</div>
+
     </div>
 
 </div>
